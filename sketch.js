@@ -81,7 +81,7 @@ const uxDisplay = () => {
 }
 const divider = y => line(0,y,width,y);
 function setup() {
-  let canvas = createCanvas(windowWidth-20,Math.round((windowWidth-20)*9/16));
+  let canvas = createCanvas(windowWidth-20,windowHeight/2);
   canvas.parent("sketch_holder");
   displayButtons(colorNames);
   for(let i=0;i<4;i++) choosenPattern.push(random(colorPoole));
